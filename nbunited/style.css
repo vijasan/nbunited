@@ -1,0 +1,100 @@
+/* 
+Theme Name:    NBUNITED
+Template:    twentytwenty
+Version:      2.0
+Description:  Twenty Twenty Child Theme
+Author:      Lukas Gravgaard
+*/
+
+@font-face {
+	font-family: montserrat;
+	src: url(http://www.mirzah.dk/MMD/Afleveringer/nbunited/wp-content/themes/nbunited/montserrat/Montserrat-Bold.ttf)
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(http://www.mirzah.dk/MMD/Afleveringer/nbunited/wp-content/themes/nbunited/opensans/OpenSans-Medium.ttf)
+}
+
+h1 {
+	font-family: montserrat !important;
+}
+
+.entry-content h2, .entry-content h3 {
+	font-family: montserrat !important;
+}
+
+.entry-content p, .wp-block-group p, .entry-content li {
+	font-family: opensans !important;
+}
+
+.modal-menu > li > a, .modal-menu > li > .ancestor-wrapper > a {
+	font-family: opensans !important;
+}
+
+.footer-copyright {
+	font-family: opensans !important;
+}
+
+a{color:#F27329}
+
+.filter {
+  border-radius: 0;
+	background: #285934 !important;
+}
+
+.valgt {
+  background: #F27329 !important;
+
+}
+
+#fodboldhold-oversigt {
+	display: grid;
+	grid-gap: 20px;
+}
+
+#fodboldhold-oversigt h1 {
+  grid-column: 1/4;
+}
+
+#fodboldhold-oversigt section {
+  cursor: pointer;
+}
+
+#fodboldhold-oversigt section h2 {
+  font-size: 3rem;
+}
+
+#fodboldhold-oversigt section h2,
+#fodboldhold-oversigt section p {
+  padding: 10px;
+}
+
+#filtrering {
+	margin: 6rem auto
+	flex-wrap: wrap;
+	display: inline-flex;
+	background-color: #285934;
+	width: 100vw;
+	justify-content: center;
+}
+
+.hold-container {
+	padding: 0 !important;
+	background: #D9D9D9;
+}
+
+.hold-container:hover {
+	background: #B3B3B3;
+}
+
+@media only screen and (min-width: 768px) {
+  #fodboldhold-oversigt{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.hold-container !important {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
